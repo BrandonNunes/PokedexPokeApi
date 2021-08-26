@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818ee;
+    height: 100vh;
+    overflow: hidden;
+    border: 10px solid red;
+}
+.pokeimg{
+    border-radius: 50%;
+}
+.pokeList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 300px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff99;   
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    overflow: hidden;
+    text-transform: capitalize;
+    gap: 5px;
+}
+li{
+    list-style: none;
+}
+h2{
+    text-align: center;
+    color: #007ba7;
+    text-transform: capitalize;
+}
+p{
+    text-align: center;
+    color: brown;
+}
+input, button{
+    color: #000;
+    border-radius: 5px;
+    border: none;
+    background-color:#EBE340 ;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: right;
+}
+.footer{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
