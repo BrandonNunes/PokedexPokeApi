@@ -19,29 +19,29 @@ export default function SinglePokemon(){
     }
     
     useEffect(()=>{ getPokemon() },)
-    if(nameOrId==0||nameOrId==""){
+    if(nameOrId===0||nameOrId===""){
         setNameOrId(`meowth`)
     }
     const colorType=()=>{
        switch(pokeType){
            case 'grass':  return '#36EB3C'
-           break;
+           
            case 'bug':  return 'darkgreen'
-           break;
+           
            case 'poison':  return '#6F4ED4'
-           break;
+        
            case 'steel':  return '#EEFFE6'
-           break;
+           
            case 'fairy':  return 'white'
-           break;
+           
            case 'dark':  return 'black'
-           break;
+           
            case 'fire':  return '#FF130B'
-           break;
+           
            case 'water':  return '#A8E4FF'
-           break;
+           
            case 'electric':  return 'yellow'
-           break;
+           
            default: return '#F520E0'
        }
     }
@@ -49,8 +49,8 @@ export default function SinglePokemon(){
     return(
         <>
            <div>
-              {nameOrId==''?" ":<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png`} style={{width:'150px', backgroundColor:colorType()}} className="pokeimg"/>}
-                <h2>{poke.name} #{nameOrId==''?'pokemon': poke.id}</h2>  
+              {nameOrId===''?" ":<img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${poke.id}.png`} style={{width:'150px', backgroundColor:colorType()}} className="pokeimg" alt='imagem pokemon'/>}
+                <h2>{poke.name} #{nameOrId===''?'pokemon': poke.id}</h2>  
                 <p>Type: <span style={{color:colorType()}}>{pokeType}</span></p>               
           </div> 
                 <input  type='text' onChange={(e)=>setNameOrId(e.target.value)} />

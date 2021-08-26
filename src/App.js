@@ -9,8 +9,8 @@ function App() {
         <SinglePokemon/>
         <Pokedex/>
         <footer className='footer'>
-                  <img src='https://image.flaticon.com/icons/png/512/38/38462.png' width='100px' />
-                <img src='https://image.flaticon.com/icons/png/512/37/37434.png' width='100px'/>
+                  <img src='https://image.flaticon.com/icons/png/512/38/38462.png' width='100px' alt='controls'/>
+                <img src='https://image.flaticon.com/icons/png/512/37/37434.png' width='100px' alt='controls2'/>
             </footer>
     </div>
   );
