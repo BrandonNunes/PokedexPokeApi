@@ -20,7 +20,8 @@ export default function SinglePokemon(){
     
     useEffect(()=>{ getPokemon() },)
     if(nameOrId===0||nameOrId===""){
-        setNameOrId(`meowth`)
+        let random = Math.floor(Math.random()*899)
+        setNameOrId(random)
     }
     const colorType=()=>{
        switch(pokeType){

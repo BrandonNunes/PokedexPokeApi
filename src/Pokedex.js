@@ -25,7 +25,7 @@ axios.get(currentUrl)
     setNextPage(res.data.next)
     setPreviousPage(res.data.previous)
 })
-},[pokemon])
+},[pokemon,currentUrl])
 
 
 const next=()=>{
