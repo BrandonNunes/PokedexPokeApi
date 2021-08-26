@@ -54,7 +54,7 @@ export default function SinglePokemon(){
                 <h2>{poke.name} #{nameOrId===''?'pokemon': poke.id}</h2>  
                 <p>Type: <span style={{color:colorType()}}>{pokeType}</span></p>               
           </div> 
-                <input  type='text' onChange={(e)=>setNameOrId(e.target.value)} />
+                <input  type='text' onChange={(e)=>setNameOrId(e.target.value.toLowerCase())} />
                 <button onClick={()=>getPokemon()} >Search</button>           
         </>
     )
